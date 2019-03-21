@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "name": "vuestarter.aspnetcore",
+  "private": true,
+  "scripts": {
+    "build-dev": "SET NODE_ENV=development&& node node_modules/webpack/bin/webpack.js --mode=development --watch"
+  },
+  "devDependencies": {
+    "webpack": "4.29.6",
+    "webpack-cli": "3.3.0",
+    "css-loader": "2.1.1",
+    "json-loader": "0.5.7",
+    "style-loader": "0.23.1",
+    "file-loader": "3.0.1",
+    "url-loader": "1.1.2",
+    "babel-loader": "7.1.5",
+    "babel-core": "6.26.3",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-stage-2": "6.24.1"
+  }
+}
