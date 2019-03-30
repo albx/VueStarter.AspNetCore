@@ -3,6 +3,8 @@
 const path = require("path");
 const outputDir = "./wwwroot";
 
+const { VueLoaderPlugin } = require('vue-loader');
+
 const isDevMode = process.env.NODE_ENV !== 'production';
 
 module.exports = {
@@ -19,14 +21,23 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, outputDir),
+        publicPath: "/",
         filename: "js/[name].js"
     },
     module: {
         rules: [
             {
+                test: /\.vue$/,
+                include: /Client/,
+                loader: 'vue-loader'
+            },
+            {
                 test: /\.js?$/,
                 loader: "babel-loader"
             }
         ]
-    }
+    },
+    plugins: [
+        new VueLoaderPlugin()
+    ]
 };

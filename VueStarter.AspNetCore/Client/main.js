@@ -1,3 +1,11 @@
-﻿"use strict";
+﻿'use strict'
 
-console.log("IT WORKS");
+import Vue from 'vue'
+
+import App from './app/App.vue'
+
+const app = new Vue({
+    ...App
+})
+
+app.$mount('#app')

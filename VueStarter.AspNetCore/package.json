@@ -3,7 +3,10 @@
   "name": "vuestarter.aspnetcore",
   "private": true,
   "scripts": {
-    "build-dev": "SET NODE_ENV=development&& node node_modules/webpack/bin/webpack.js --mode=development --watch"
+    "build-dev": "SET NODE_ENV=development&& node node_modules/webpack/bin/webpack.js --mode=development"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
   },
   "devDependencies": {
     "webpack": "4.29.6",
@@ -16,6 +19,12 @@
     "babel-loader": "7.1.5",
     "babel-core": "6.26.3",
     "babel-preset-env": "1.7.0",
-    "babel-preset-stage-2": "6.24.1"
+    "babel-preset-stage-2": "6.24.1",
+    "vue-loader": "15.7.0",
+    "vue-style-loader": "4.1.2",
+    "vue-template-compiler": "2.6.10",
+    "aspnet-webpack": "3.0.0",
+    "webpack-hot-middleware": "2.24.3",
+    "webpack-dev-middleware": "3.6.1"
   }
 }
