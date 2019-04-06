@@ -12,26 +12,15 @@
                 </div>
                 <div class="navbar-menu">
                     <div class="navbar-start">
-                        <a class="navbar-item">Home</a>
-                        <a class="navbar-item">About</a>
-                        <a class="navbar-item">Contact</a>
+                        <router-link to="/" v-bind:exact="true" class="navbar-item">Home</router-link>
+                        <router-link to="/about" class="navbar-item">About</router-link>
+                        <router-link to="/contact" class="navbar-item">Contact</router-link>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <section class="hero welcome is-light is-bold is-small">
-                <div class="hero-body">
-                    <div class="container">
-                        <h1 class="title">
-                            Hello, VueJS!
-                        </h1>
-                        <h2 class="subtitle">
-                            This is your home page
-                        </h2>
-                    </div>
-                </div>
-            </section>
+            <router-view></router-view>
         </div>
     </div>
 </template>

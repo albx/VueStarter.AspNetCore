@@ -6,7 +6,8 @@
     "build-dev": "SET NODE_ENV=development&& node node_modules/webpack/bin/webpack.js --mode=development"
   },
   "dependencies": {
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "3.0.2"
   },
   "devDependencies": {
     "webpack": "4.29.6",
