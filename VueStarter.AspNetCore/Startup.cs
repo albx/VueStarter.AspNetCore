@@ -52,6 +52,10 @@ namespace VueStarter.AspNetCore
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
+
+                routes.MapSpaFallbackRoute(
+                    name: "SpaFallback",
+                    defaults: new { controller = "Home", action = "Index" });
             });
         }
     }
